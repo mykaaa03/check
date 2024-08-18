@@ -1,0 +1,134 @@
+/* 全体の設定 */
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* ナビゲーションメニュー */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto ;
+    max-width: 960px;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;  /* リンクの下線を無くす */
+    font-size: 34px;
+    color: black;
+}
+
+/* ナビゲーションメニューのMyProfileの部分 */
+.home {
+    border: 1px solid black;
+    padding: 0px 20px;
+    margin-left: 20px;
+}
+
+/* メニューの余白 */
+.menu > a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* 名前 */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* カテゴリ（About,Work） */
+h1 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 34px;
+}
+
+/* 自己紹介文 */
+li {
+    font-size: 18px;
+}
+
+/* divの 不要な空白を削除 */
+div {
+    font-size: 0;
+}
+
+/* メイン画像 */
+.mainpic {
+    width: 100%;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* About */
+.about {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+/* 丸く切り取る画像 */
+.circle {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/* プロフィールの説明部分 */
+.content {
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+/* Works */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+/* Worksの画像と説明部分 */
+.item {
+    padding-bottom: 60px;
+    width: 25%;
+}
+
+/* Worksの画像と説明部分（2個目） */
+.item_center {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* フッター */
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+    .item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
